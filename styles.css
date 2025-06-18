@@ -56,6 +56,10 @@ header {
 header > p {
   color: var(--text-dark);
   font-size: 1.5rem;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  /*https://www.w3schools.com/howto/howto_css_disable_text_selection.asp*/
 }
 
 header > p:hover {
