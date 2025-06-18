@@ -56,6 +56,7 @@ header {
 header > p {
   color: var(--text-dark);
   font-size: 1.5rem;
+  cursor: pointer;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
@@ -314,6 +315,7 @@ main {
   font-size: 0.8rem;
   padding: 0.1rem 0.2rem;
   font-weight: bold;
+  cursor: pointer;
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
