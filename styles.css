@@ -162,11 +162,10 @@ main {
 
 .cards > .card:hover {
   transition: 0.3s;
-  font-size: 1.55rem;
+  scale: 1.1;
 }
 
 .cards > .card:hover > i {
-  scale: 1.05;
   animation: rotateBackForth 1.5s infinite ease-in-out;
   transition: 1s;
 }
