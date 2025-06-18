@@ -328,6 +328,10 @@ footer {
   color: white;
 }
 
+.cajthaml:hover {
+  cursor: pointer;
+}
+
 /* ---------- Responsivita ---------- */
 
 @media (max-width: 1024px) {
