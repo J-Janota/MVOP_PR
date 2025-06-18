@@ -228,7 +228,7 @@ main {
   grid-area: 1 / 1 / 5 / 5;
   background-image:
     linear-gradient(rgba(255, 165, 0, 0.5), rgba(255, 165, 0, 0.5)),
-    url("../Images/thisisengineering-raeng-8hgmG03spF4-unsplash.jpg");
+    url("thisisengineering-raeng-8hgmG03spF4-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
