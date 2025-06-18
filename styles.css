@@ -134,7 +134,7 @@ main {
   width: 100%;
 }
 
-.cards > div {
+.cards > .card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,12 +151,12 @@ main {
   transition: 0.5s;
 }
 
-.cards > div:hover {
+.cards > .card:hover {
   transition: 0.3s;
   font-size: 1.55rem;
 }
 
-.cards > div:hover > i {
+.cards > .card:hover > i {
   scale: 1.05;
   animation: rotateBackForth 1.5s infinite ease-in-out;
   transition: 1s;
@@ -168,7 +168,7 @@ main {
   100% { transform: rotate(-20deg); }
 }
 
-.cards > div > i {
+.cards > .card > i {
   font-size: 3rem;
 }
 
@@ -224,11 +224,11 @@ main {
   border-radius: 10px;
 }
 
-.div1 {
+.article1 {
   grid-area: 1 / 1 / 5 / 5;
   background-image:
     linear-gradient(rgba(255, 165, 0, 0.5), rgba(255, 165, 0, 0.5)),
-    url("thisisengineering-raeng-8hgmG03spF4-unsplash.jpg");
+    url("../Images/thisisengineering-raeng-8hgmG03spF4-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -238,20 +238,20 @@ main {
   /*https://chatgpt.com/share/685083bd-6590-800b-99f4-b17db2f27c75*/
 }
 
-.div1 > .grid-item-content > h2 {
+.article1 > .grid-item-content > h2 {
   font-size: 1.5rem;
 }
 
-.div1 > .grid-item-content > p {
+.article1 > .grid-item-content > p {
   font-size: 1.2rem;
 }
 
-.div2 { grid-area: 5 / 1 / 7 / 3; border-left: 7px solid var(--accent); }
-.div3 { grid-area: 5 / 3 / 7 / 5; border-left: 7px solid var(--accent); }
-.div4 { grid-area: 7 / 1 / 9 / 3; border-left: 7px solid var(--accent); }
-.div5 { grid-area: 7 / 3 / 9 / 5; border-left: 7px solid var(--accent); }
+.article2 { grid-area: 5 / 1 / 7 / 3; border-left: 7px solid var(--accent); }
+.article3 { grid-area: 5 / 3 / 7 / 5; border-left: 7px solid var(--accent); }
+.article4 { grid-area: 7 / 1 / 9 / 3; border-left: 7px solid var(--accent); }
+.article5 { grid-area: 7 / 3 / 9 / 5; border-left: 7px solid var(--accent); }
 
-.div6 {
+.article6 {
   grid-area: 1 / 5 / 9 / 6;
   background-color: var(--aside-background);
   display: flex;
@@ -264,16 +264,16 @@ main {
   line-height: 1.2;
 }
 
-.div6 > i {
+.article6 > i {
   font-size: 3rem;
   color: var(--accent);
 }
 
-.div6 > h1 {
+.article6 > h1 {
   font-size: 2rem;
 }
 
-.div6 > button {
+.article6 > button {
   background-color: var(--accent);
   color: white;
   border: none;
@@ -284,7 +284,7 @@ main {
   width: 100%;
 }
 
-.div6 > button:hover {
+.article6 > button:hover {
   background-color: var(--text-dark);
   transition: 1s;
   scale: 1.05;
@@ -341,12 +341,12 @@ footer {
     grid-row-gap: 10px;
   }
 
-  .div1 { grid-area: 1 / 1 / 3 / 2; padding: 3rem 5rem; }
-  .div2 { grid-area: 3 / 1 / 4 / 2; }
-  .div3 { grid-area: 4 / 1 / 5 / 2; }
-  .div4 { grid-area: 5 / 1 / 6 / 2; }
-  .div5 { grid-area: 6 / 1 / 7 / 2; }
-  .div6 { grid-area: 7 / 1 / 9 / 2; }
+  .article1 { grid-area: 1 / 1 / 3 / 2; padding: 3rem 5rem; }
+  .article2 { grid-area: 3 / 1 / 4 / 2; }
+  .article3 { grid-area: 4 / 1 / 5 / 2; }
+  .article4 { grid-area: 5 / 1 / 6 / 2; }
+  .article5 { grid-area: 6 / 1 / 7 / 2; }
+  .article6 { grid-area: 7 / 1 / 9 / 2; }
 }
 
 @media (max-width: 768px) {
@@ -358,17 +358,17 @@ footer {
 
   input[type="search"] { font-size: 0.75rem; }
 
-  .cards > div {
+  .cards > .card {
     padding: 0.5rem;
     margin: 0.5rem;
     gap: 0.75rem;
   }
 
-  .cards > div > i { font-size: 1.6rem; }
-  .cards > div > h2 { font-size: 0.8rem; flex-wrap: wrap; }
+  .cards > .card > i { font-size: 1.6rem; }
+  .cards > .card > h2 { font-size: 0.8rem; flex-wrap: wrap; }
 
   aside.div6,
-  .div1,
+  .article1,
   .header {
     padding: 0.5rem 2rem;
   }
@@ -381,7 +381,7 @@ footer {
     padding: 0.5rem;
   }
 
-  .cards > div {
+  .cards > .card {
     width: 100%;
     height: 100%;
     flex: 1;
@@ -389,26 +389,26 @@ footer {
     padding: 1rem 0;
   }
 
-  .div1 > .grid-item-content > h2 { font-size: 1rem; }
-  .div1 > .grid-item-content > p { font-size: 0.8rem; }
+  .article1 > .grid-item-content > h2 { font-size: 1rem; }
+  .article1 > .grid-item-content > p { font-size: 0.8rem; }
 }
 
 @media (max-width: 425px) {
   header > p { font-size: 1rem; }
   input[type="search"] { font-size: 0.75rem; }
 
-  .cards > div {
+  .cards > .card {
     padding: 0.5rem;
     margin: 0.5rem;
     gap: 0.75rem;
   }
 
-  .cards > div > i { font-size: 1.5rem; }
-  .cards > div > h2 { font-size: 0.75rem; flex-wrap: wrap; }
+  .cards > .card > i { font-size: 1.5rem; }
+  .cards > .card > h2 { font-size: 0.75rem; flex-wrap: wrap; }
 
-  .div1 { padding: 1rem 1.5rem; }
-  .div6 > h1 { font-size: 1.25rem;}
-  .div6 > p { font-size: 0.75rem;}
+  .article1 { padding: 1rem 1.5rem; }
+  .article6 > h1 { font-size: 1.25rem;}
+  .article6 > p { font-size: 0.75rem;}
 
   .cards {
     display: grid;
@@ -418,7 +418,7 @@ footer {
     padding: 0.5rem;
   }
 
-  .cards > div {
+  .cards > .card {
     width: 100%;
     height: 100%;
     flex: 1;
