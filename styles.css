@@ -276,6 +276,11 @@ main {
 
 .article6 > h1 {
   font-size: 2rem;
+  color: var(--text-dark);
+}
+
+.article6 > p {
+  color: var(--text-dark);
 }
 
 .article6 > button {
