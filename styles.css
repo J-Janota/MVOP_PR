@@ -80,6 +80,7 @@ header > p:hover {
 
 input[type="search"] {
   all: unset;
+  width: 100%;
 }
 
 nav > ul {
