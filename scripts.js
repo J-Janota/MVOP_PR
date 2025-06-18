@@ -15,7 +15,7 @@ cajthamls.forEach((element) => {
 });
 
 const bellIcon = document.querySelector(".fa-bell");
-var audio = new Audio("../Images/mixkit-church-bell-calling-603.wav")
+var audio = new Audio("mixkit-church-bell-calling-603.wav")
 
 bellIcon.addEventListener("mouseenter", () => {
     audio.play();
